@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
+body{
+    min-height: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background: url(images/filler.png);
+    background-size: 100%;
+}
+
+/* ---------- Gombok ---------- */
+button{
+    font-family: 'Merienda', cursive;
+}
+a img:hover, button img:hover{
+    scale: 115%;
+}
+.buttons{
+    text-align: center;
+}
+.customIcons{
+    border: none;
+    background-color: transparent;
+}
+img.delete{         /*  Törlés gomb */
+    height: 30px;
+    width: 30px;
+    vertical-align: middle;
+}
+img.edit{         /*  Módosítás gomb */
+    height: 30px;
+    width: 30px;
+    vertical-align: middle;
+}
+img.save{         /*  Mentés gomb */
+    height: 40px;
+    width: 40px;
+    vertical-align: middle;
+}
+img.add{             /*  Hozzáadás gomb */
+    height: 40px;
+    width: 40px;
+    vertical-align: middle;
+}
+img.back{           /*  Vissza gomb */
+    vertical-align: middle;
+    height: 40px;
+    width: 40px;
+}
+
+/* ---------- Táblázat adatbázishoz ---------- */
+table.job_table{
+    color: black; 
+    background: rgb(255, 255, 255, 0.7);
+    border-radius: 0.25em;
+    border-collapse: collapse;
+    margin: 1em;
+    width: 600px;
+    text-align: center;
+    margin-left: 50px;
+    box-shadow: 0px 10px 30px black;
+}
+table.salary_table{
+    color: black; 
+    background: rgb(255, 255, 255, 0.7);
+    border-radius: 0.25em;
+    border-collapse: collapse;
+    margin: 1em;
+    width: 530px;
+    text-align: center;
+    margin-left: 50px;
+    box-shadow: 0px 10px 30px black;
+}
+table.task_table{
+    color: black; 
+    background: rgb(255, 255, 255, 0.7);
+    border-radius: 0.25em;
+    border-collapse: collapse;
+    margin: 1em;
+    text-align: center;
+    margin-left: 50px;
+    width: 850px;
+    box-shadow: 0px 10px 30px black;
+}
+
+th {
+    border-bottom: 1px solid #364043;
+    color: black;
+    font-size: 19px;
+    font-weight: 600;
+    padding: 0.5em 1em;
+    text-align: center;
+    font-family: 'Merienda', cursive;
+}
+td {
+    font-family: 'Merienda', cursive;
+    color: black;
+    padding: 0.65em 1em;
+}
+
+tr.hoveredTr:hover {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+/* ---------- Táblázat mögötti rész ---------- */
+.ticketDesign{
+    background-color: #241231;
+    width: 600px;
+    display: table;
+    vertical-align: middle;
+    text-align: center;
+    justify-content: center;
+    padding: 30px;
+    zoom: 140%;
+    box-shadow: 30px 30px 30px black;
+    border-radius: 5%;
+    border: 2px solid;
+    border-color: #b6b6b6;
+    margin-top: 50px;
+}
+.ticketDesignUpdate{
+    background-color: #241231;
+    width: 600px;
+    display: table;
+    vertical-align: middle;
+    text-align: center;
+    justify-content: center;
+    padding: 30px;
+    zoom: 140%;
+    box-shadow: 30px 30px 30px black;
+    border-radius: 5%;
+    border: 2px solid;
+    border-color: #b6b6b6;
+    margin-top: 15%;
+}
+.backPrevPage{
+    float: left;
+    margin-left: -15px;
+}
+/* --------------- Bekérő ablak --------------- */
+input.job_input{
+    background: 0;
+    border: 0;
+    border-bottom: 2px solid white;
+    outline: none;
+    width: 250px;
+    max-width: 400px;
+    color: white;
+    transition: padding 0.3s 0.2s ease;
+    font-size: 18px;
+    font-family: 'Merienda', cursive;
+    margin-left: 10px;
+    
+}
+input.salary_input{
+    background: 0;
+    border: 0;
+    border-bottom: 2px solid white;
+    outline: none;
+    width: 200px;
+    max-width: 400px;
+    color: white;
+    transition: padding 0.3s 0.2s ease;
+    font-size: 18px;
+    font-family: 'Merienda', cursive;
+    margin-left: 10px;
+}
+input.task_input{
+    background: 0;
+    border: 0;
+    border-bottom: 2px solid white;
+    outline: none;
+    width: 150px;
+    max-width: 400px;
+    color: white;
+    transition: padding 0.3s 0.2s ease;
+    font-size: 18px;
+    font-family: 'Merienda', cursive;
+    margin-left: 10px;
+}
+input.task_input_update{
+    background: 0;
+    border: 0;
+    border-bottom: 2px solid white;
+    outline: none;
+    width: 250px;
+    max-width: 400px;
+    color: white;
+    transition: padding 0.3s 0.2s ease;
+    font-size: 18px;
+    font-family: 'Merienda', cursive;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+label{
+    color: white;
+    font-size: 18px;
+    font-family: 'Merienda', cursive;
+    margin-right: 10px;
+}
+::placeholder{
+    color: rgb(198, 197, 197);
+}
+input:focus{
+    padding-bottom: 5px;
+}
