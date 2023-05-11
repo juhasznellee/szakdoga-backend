@@ -37,10 +37,9 @@
 
                     $result = $conection->query($sql_select);
                     if($result->num_rows > 0){
-                        echo "<tr><th>Id</th><th>Feladat</th><th>Válasz</th><th>Megoldás</th><th>Szerkesztés</th><th>Törlés</th></tr>";
+                        echo "<tr><th>Feladat</th><th>Válasz</th><th>Megoldás</th><th>Szerkesztés</th><th>Törlés</th></tr>";
                         while($row = $result->fetch_assoc()){ ?>
                             <tr class='hoveredTr'>
-                                <td><?php echo $row['id']; ?></td>
                                 <td><?php echo $row['task']; ?></td>
                                 <td><?php echo $row['answer']; ?></td>
                                 <td><?php echo $row['solution']; ?></td>

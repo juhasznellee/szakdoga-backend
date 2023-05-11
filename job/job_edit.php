@@ -35,10 +35,9 @@
 
                     $result = $conection->query($sql_select);
                     if($result->num_rows > 0){
-                        echo "<tr><th>Id</th><th>Megnevezés</th><th>Szint</th><th>Törlés</th></tr>";
+                        echo "<tr><th>Megnevezés</th><th>Szint</th><th>Törlés</th></tr>";
                         while($row = $result->fetch_assoc()){ ?>
                             <tr class='hoveredTr'>
-                                <td><?php echo $row['id']; ?></td>
                                 <td><?php echo $row['description']; ?></td>
                                 <td><?php echo $row['level']; ?></td>
                                 <td><a href="job_delete_item.php?id=<?php echo $row['id']; ?>"><img src="..\images/delete_icon.png" class='delete' alt="Delete"></a></td>
