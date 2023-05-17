@@ -31,7 +31,7 @@
         <div id='salaryTable'>
             <table class="salary_table">
                 <?php
-                    $sql_select = "SELECT `id`, `description`, `level` FROM `salary` ORDER BY `level`";
+                    $sql_select = "SELECT `id`, `description`, `level` FROM `salary` ORDER BY `level`, `description`";
 
                     $result = $conection->query($sql_select);
                     if($result->num_rows > 0){
