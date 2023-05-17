@@ -40,7 +40,7 @@
               <label for="solutionNum">Megoldás:</label>&nbsp;&nbsp;
               <input class="task_input_update" type="number" autocomplete="off" placeholder="Megoldás" name="solutionNum" id="solutionNum" value="<?php echo $row['solution']; ?>"><br>
               <button type="submit" name='update' class='customIcons'>
-                <img src="..\images/check_icon_f.png" class='save' alt="Save">
+                <img src="..\images/save_icon_f.png" class='save' alt="Save">
               </button>
             </form>
           </div>
