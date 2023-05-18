@@ -16,7 +16,7 @@
 
         $sql_insert = "INSERT INTO `tasks` (`id`, `task`, `answer`, `solution`) VALUES ('0', '$taskName', '$answerNum', '$solutionNum')";
 
-        $rs = mysqli_query($conection, $sql_insert);
+        $rs =  $conection->query($sql_insert);
 
         $conection->close();
     }

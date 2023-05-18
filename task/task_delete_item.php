@@ -7,8 +7,8 @@
 
     $id = $_GET['id'];
 
-    $sql_update = "DELETE FROM `tasks` WHERE `id`='$id'";
-    $result = $conection->query($sql_update);
+    $sql_delete = "DELETE FROM `tasks` WHERE `id`='$id'";
+    $result = $conection->query($sql_delete);
 
     if ($result = 1) {
         $conection->close();
