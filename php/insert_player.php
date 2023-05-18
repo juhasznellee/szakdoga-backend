@@ -16,5 +16,4 @@
     $result = $conection->query($sql_insert);
 
     $conection->close();
-
 ?>
